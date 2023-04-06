@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist/mean-stack-crud-app')));
 app.use('/', express.static(path.join(__dirname, 'dist/mean-stack-crud-app')));
-app.use('/employee', employeeRoute)
+app.use('/api', employeeRoute)
 
 // Create port
 const port = process.env.PORT || 4000;
